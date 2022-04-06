@@ -2,17 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/jessevdk/go-flags"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	log "github.com/sirupsen/logrus"
-	"github.com/webdevops/deadmanssnitch-exporter/config"
-	"github.com/webdevops/deadmanssnitch-exporter/dmsclient"
 	"net/http"
 	"os"
 	"path"
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/jessevdk/go-flags"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/webdevops/deadmanssnitch-exporter/config"
+	"github.com/webdevops/deadmanssnitch-exporter/dmsclient"
 )
 
 const (
