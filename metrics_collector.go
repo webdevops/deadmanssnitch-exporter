@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/prometheus/client_golang/prometheus"
-	prometheusCommon "github.com/webdevops/go-prometheus-common"
+	prometheusCommon "github.com/webdevops/go-common/prometheus"
 )
 
 type MetricsCollectorCollector struct {
