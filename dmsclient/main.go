@@ -56,7 +56,7 @@ func (c *Client) SetAccessToken(token string) {
 func (c *Client) rest() *resty.Client {
 	if c.restClient == nil {
 		c.restClient = resty.New()
-		c.restClient.SetHostURL(DmsApiUrl)
+		c.restClient.SetBaseURL(DmsApiUrl)
 		c.restClient.SetHeader("Accept", "application/json")
 		c.restClient.SetBasicAuth(*c.accessToken, "")
 		c.restClient.SetRetryCount(c.RequestRetries)
